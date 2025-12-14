@@ -1,0 +1,292 @@
+/* Common styles for navigation and footer across all pages */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Styles */
+.hamburger {
+    display: none;
+}
+
+.nav {
+    height: 70px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 2000;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.navl {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 20%;
+}
+
+.navl img {
+    height: 45px;
+    width: 65px;
+    border-radius: 50%;
+}
+
+.navl p {
+    font-size: 30px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.nav a {
+    color: black;
+}
+
+.navc {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.listc {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.listc a {
+    text-decoration: none;
+    color: black;
+}
+
+.navr {
+    width: 20%;
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+}
+
+.navr i {
+    font-size: 25px;
+}
+
+.listc > li > a:hover {
+    background-color: rgb(216, 215, 215);
+    padding: 7px 10px;
+    border-radius: 10px;
+}
+
+/* Hamburger Menu */
+.hamburgerdisplay {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    text-align: center;
+    z-index: 1999;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+}
+
+.hamburgerdisplay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hamburgerdisplay li {
+    margin: 15px 0;
+}
+
+.hamburgerdisplay li a {
+    font-size: 18px;
+    padding: 12px 20px;
+    display: block;
+    color: black;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.hamburgerdisplay li a:hover {
+    background-color: rgb(216, 215, 215);
+}
+
+.hamburgerdisplay.show {
+    display: block;
+}
+
+/* Footer Styles */
+.footer {
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.f1 {
+    height: 220px;
+    width: 30%;
+}
+
+.f1 p {
+    text-align: start;
+    font-size: 19px;
+}
+
+.flist {
+    list-style-type: none;
+    margin-top: 10px;
+    padding-bottom: 50px;
+}
+
+.flist a {
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+}
+
+.flist li {
+    margin-bottom: 10px;
+}
+
+.f1 input {
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 70px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.f1 button {
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 122px;
+    border-radius: 10px;
+    background-color: rgb(17, 225, 17);
+    border: none;
+    outline: none;
+}
+
+.f1 button:hover {
+    background-color: greenyellow;
+}
+
+.f1 img {
+    height: 30px;
+    width: 30px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.f1 img:hover {
+    background-color: rgb(190, 188, 188);
+}
+
+/* Tablet Responsive */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .nav {
+        padding: 0 15px;
+    }
+    .hamburger {
+        display: block;
+        font-size: 26px;
+        color: black;
+        cursor: pointer;
+    }
+    .navc,
+    .navr {
+        display: none;
+    }
+    .navl {
+        width: 70%;
+    }
+    .navl img {
+        height: 42px;
+        width: 60px;
+    }
+    .navl p {
+        font-size: 20px;
+    }
+    .f1 input,
+    .f1 button {
+        width: 90%;
+        margin-left: 10px;
+        padding: 8px 20px;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .nav {
+        padding: 0 10px;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 28px;
+        color: black;
+        cursor: pointer;
+    }
+
+    .navc,
+    .navr {
+        display: none;
+    }
+
+    .navl {
+        width: 60%;
+    }
+
+    .navl img {
+        height: 35px;
+        width: 35px;
+    }
+
+    .navl p {
+        font-size: 16px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .f1 {
+        width: 100%;
+    }
+
+    .f1 input,
+    .f1 button {
+        width: 95%;
+        margin-left: 0;
+    }
+
+    .f1 h2 {
+        font-size: 18px;
+    }
+
+    .f1 p {
+        font-size: 16px;
+    }
+
+    .flist a {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,214 @@
+/* UNIVERSAL TABLET RESPONSIVE STYLES FOR NAVBAR AND FOOTER */
+
+/* TABLET RESPONSIVE - iPad Pro, Surface Pro 7 (1025px - 1366px) */
+@media (max-width: 1366px) and (min-width: 1025px) {
+    /* NAVBAR */
+    .nav {
+        padding: 0 30px;
+        height: 75px;
+    }
+    .navl {
+        width: 25%;
+    }
+    .navl img {
+        height: 50px;
+        width: 70px;
+    }
+    .navl p {
+        font-size: 26px;
+    }
+    .navc {
+        width: 50%;
+    }
+    .listc {
+        font-size: 18px;
+        gap: 25px;
+    }
+    .navr {
+        width: 25%;
+    }
+    .navr i {
+        font-size: 26px;
+    }
+    .hamburger {
+        display: none;
+    }
+    
+    /* FOOTER */
+    .footer {
+        padding: 45px 30px;
+        gap: 25px;
+        flex-wrap: nowrap;
+    }
+    .f1 {
+        width: 24%;
+        height: 240px;
+    }
+    .f1 h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .f1 p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .flist a {
+        font-size: 16px;
+    }
+    .f1 input {
+        width: 100%;
+        margin-left: 0;
+        padding: 12px 15px;
+        margin-top: 15px;
+    }
+    .f1 button {
+        width: 100%;
+        margin-left: 0;
+        padding: 12px 15px;
+        margin-top: 10px;
+    }
+    .f1 img {
+        height: 32px;
+        width: 32px;
+        margin-top: 15px;
+    }
+}
+
+/* TABLET RESPONSIVE - iPad Air, Standard Tablets (769px - 1024px) */
+@media (max-width: 1024px) and (min-width: 769px) {
+    /* NAVBAR */
+    .nav {
+        padding: 0 25px;
+        height: 72px;
+    }
+    .navl {
+        width: 30%;
+    }
+    .navl img {
+        height: 48px;
+        width: 68px;
+    }
+    .navl p {
+        font-size: 24px;
+    }
+    .navc {
+        width: 45%;
+    }
+    .listc {
+        font-size: 17px;
+        gap: 18px;
+    }
+    .navr {
+        width: 25%;
+    }
+    .navr i {
+        font-size: 24px;
+    }
+    .hamburger {
+        display: none;
+    }
+    
+    /* FOOTER */
+    .footer {
+        padding: 40px 25px;
+        gap: 20px;
+        flex-wrap: nowrap;
+    }
+    .f1 {
+        width: 24%;
+        height: 220px;
+    }
+    .f1 h2 {
+        font-size: 19px;
+        margin-bottom: 12px;
+    }
+    .f1 p {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+    .flist a {
+        font-size: 15px;
+    }
+    .f1 input {
+        width: 100%;
+        margin-left: 0;
+        padding: 10px 12px;
+        margin-top: 12px;
+    }
+    .f1 button {
+        width: 100%;
+        margin-left: 0;
+        padding: 10px 12px;
+        margin-top: 8px;
+    }
+    .f1 img {
+        height: 30px;
+        width: 30px;
+        margin-top: 12px;
+    }
+}
+
+/* TABLET RESPONSIVE - Small Tablets (601px - 768px) */
+@media (max-width: 768px) and (min-width: 601px) {
+    /* NAVBAR */
+    .nav {
+        padding: 0 20px;
+    }
+    .hamburger {
+        display: block;
+        font-size: 26px;
+        color: black;
+        cursor: pointer;
+    }
+    .navc,
+    .navr {
+        display: none;
+    }
+    .navl {
+        width: 70%;
+    }
+    .navl img {
+        height: 42px;
+        width: 60px;
+    }
+    .navl p {
+        font-size: 22px;
+    }
+    
+    /* FOOTER */
+    .footer {
+        flex-direction: column;
+        padding: 35px 20px;
+        gap: 30px;
+    }
+    .f1 {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .f1 h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .f1 p {
+        font-size: 16px;
+    }
+    .flist {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .flist li {
+        margin-bottom: 5px;
+    }
+    .flist a {
+        font-size: 16px;
+    }
+    .f1 input,
+    .f1 button {
+        width: 80%;
+        margin: 10px auto;
+        display: block;
+    }
+}

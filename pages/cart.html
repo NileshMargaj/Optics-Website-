@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Rawool Opticians</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="navl">
+            <a href="../index.html"><img src="../assets/images/logo.png" alt=""></a>
+            <a href="../index.html" style="text-decoration: none;">
+                <p>Rawool Opticians</p>
+            </a>
+        </div>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="navc">
+            <ul class="listc">
+                <li><a href="eyeglass.html">Eyeglasses</a></li>
+                <li><a href="sunglasses.html">Sunglasses</a></li>
+                <li><a href="contact_lense.html">Contact lenses</a></li>
+                <li><a href="accssseries.html">Accessories</a></li>
+                <li><a href="store_locater.html">Store Locator</a></li>
+            </ul>
+        </div>
+        <div class="navr">
+            <a href="login.html"><i class="fa-regular fa-user"></i></a>
+            <a href="#" id="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="cart.html"><i class="fa-solid fa-basket-shopping"></i></a>
+        </div>
+    </nav>
+
+    <div class="cart-container">
+        <div class="cart-header">
+            <h1>Shopping Cart</h1>
+            <p>Review your items before checkout</p>
+        </div>
+
+        <div class="cart-content">
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+
+            <div class="cart-summary">
+                <div class="summary-card">
+                    <h3>Order Summary</h3>
+                    <div class="summary-row">
+                        <span>Subtotal (<span id="itemCount">0</span> items)</span>
+                        <span id="subtotal">₹0</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping</span>
+                        <span id="shipping">Free</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Tax</span>
+                        <span id="tax">₹0</span>
+                    </div>
+                    <hr>
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <span id="total">₹0</span>
+                    </div>
+                    <button class="checkout-btn" onclick="checkout()">
+                        <i class="fa-solid fa-lock"></i> Secure Checkout
+                    </button>
+                    <a href="../index.html" class="continue-shopping">
+                        <i class="fa-solid fa-arrow-left"></i> Continue Shopping
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="empty-cart" id="emptyCart" style="display: none;">
+            <div class="empty-cart-content">
+                <i class="fa-solid fa-shopping-cart"></i>
+                <h2>Your cart is empty</h2>
+                <p>Looks like you haven't added anything to your cart yet.</p>
+                <a href="../index.html" class="shop-now-btn">Start Shopping</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="footer">
+        <div class="f1">
+            <h2>Rawool Opticians</h2>
+            <p>Delivering quality products with a seamless shopping experience.</p>
+            <p>© 2024 All rights reserved.</p>
+            <a href=""><img src="../assets/images/insta.png" alt=""></a>
+            <a href=""><img src="../assets/images/fb (2).png" alt=""></a>
+            <a href=""><img src="../assets/images/whatsapp.png" alt=""></a>
+        </div>
+        <div class="f1">
+            <h2>Quick Links</h2>
+            <ul class="flist">
+                <li><a href="eyeglass.html">Eyeglasses</a></li>
+                <li><a href="sunglasses.html">Sunglasses</a></li>
+                <li><a href="contact_lense.html">Contact lenses</a></li>
+                <li><a href="accssseries.html">Accessories</a></li>
+                <li><a href="store_locater.html">Store Locator</a></li>
+            </ul>
+        </div>
+        <div class="f1">
+            <h2>Customer Service</h2>
+            <ul class="flist">
+                <li><a href="">FAQs</a></li>
+                <li><a href="">Shipping & Returns</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms & Conditions</a></li>
+            </ul>
+        </div>
+        <div class="f1">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for exclusive deals and updates.</p>
+            <input type="text" placeholder="enter your email">
+            <a href=""><button>Subscribe</button></a>
+        </div>
+    </section>
+
+    <div class="hamburgerdisplay">
+        <ul>
+            <li><a href="eyeglass.html">Eyeglasses</a></li>
+            <li><a href="sunglasses.html">Sunglasses</a></li>
+            <li><a href="contact_lense.html">Contact lenses</a></li>
+            <li><a href="accssseries.html">Accessories</a></li>
+            <li><a href="store_locater.html">Store Locator</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </div>
+
+    <script>
+        let hamburger = document.querySelector(".hamburger");
+        let hamburgerdisplay = document.querySelector(".hamburgerdisplay");
+
+        hamburger.addEventListener("click", () => {
+            hamburgerdisplay.classList.toggle("show");
+        });
+
+        // Cart functionality
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        function loadCart() {
+            const cartItems = document.getElementById('cartItems');
+            const emptyCart = document.getElementById('emptyCart');
+            
+            if (cart.length === 0) {
+                cartItems.style.display = 'none';
+                document.querySelector('.cart-summary').style.display = 'none';
+                emptyCart.style.display = 'block';
+                return;
+            }
+
+            cartItems.style.display = 'block';
+            document.querySelector('.cart-summary').style.display = 'block';
+            emptyCart.style.display = 'none';
+
+            cartItems.innerHTML = '';
+            cart.forEach((item, index) => {
+                const cartItem = document.createElement('div');
+                cartItem.className = 'cart-item';
+                cartItem.innerHTML = `
+                    <div class="item-image">
+                        <img src="${item.image}" alt="${item.name}">
+                    </div>
+                    <div class="item-details">
+                        <h3>${item.name}</h3>
+                        <p class="item-price">₹${item.price}</p>
+                    </div>
+                    <div class="item-quantity">
+                        <button onclick="updateQuantity(${index}, -1)">-</button>
+                        <span>${item.quantity}</span>
+                        <button onclick="updateQuantity(${index}, 1)">+</button>
+                    </div>
+                    <div class="item-total">
+                        ₹${item.price * item.quantity}
+                    </div>
+                    <button class="remove-item" onclick="removeItem(${index})">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                `;
+                cartItems.appendChild(cartItem);
+            });
+
+            updateSummary();
+        }
+
+        function updateQuantity(index, change) {
+            cart[index].quantity += change;
+            if (cart[index].quantity <= 0) {
+                cart.splice(index, 1);
+            }
+            localStorage.setItem('cart', JSON.stringify(cart));
+            loadCart();
+        }
+
+        function removeItem(index) {
+            cart.splice(index, 1);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            loadCart();
+        }
+
+        function updateSummary() {
+            const itemCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+            const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            const tax = Math.round(subtotal * 0.18);
+            const total = subtotal + tax;
+
+            document.getElementById('itemCount').textContent = itemCount;
+            document.getElementById('subtotal').textContent = `₹${subtotal}`;
+            document.getElementById('tax').textContent = `₹${tax}`;
+            document.getElementById('total').textContent = `₹${total}`;
+        }
+
+        function checkout() {
+            if (cart.length === 0) {
+                alert('Your cart is empty!');
+                return;
+            }
+            alert('Redirecting to checkout... (Demo)');
+        }
+
+        // Add sample items if cart is empty (for demo)
+        if (cart.length === 0) {
+            cart = [
+                {
+                    name: "Vincent Chase Eyeglasses",
+                    price: 1299,
+                    quantity: 1,
+                    image: "https://www.specsmakers.in/cdn/shop/products/1_340ed3b9-be7d-4210-baa9-13f8097e9c49.jpg?v=1748944921&width=300"
+                },
+                {
+                    name: "John Jacobs Sunglasses",
+                    price: 1899,
+                    quantity: 1,
+                    image: "https://static5.lenskart.com/media/catalog/product/pro/1/thumbnail/628x301/9df78eab33525d08d6e5fb8d27136e95//j/i/grey-gunmetal-full-rim-hexagonal-john-jacobs-jj-tints-jj-s12472--c2-sunglasses_john-jacobs-jj-s12472-c2-sunglasses_sunglasses_g_1972_1_1_05_july23.jpg"
+                }
+            ];
+            localStorage.setItem('cart', JSON.stringify(cart));
+        }
+
+        loadCart();
+    </script>
+
+</body>
+
+</html>

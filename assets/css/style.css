@@ -1,0 +1,1133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hamburger{
+    display: none;
+}
+.nav {
+    height: 70px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 2000;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.navl {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 20%;
+}
+
+.navl img {
+    height: 40px;           
+}
+
+.navl p {
+    font-size: 30px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.navl img {
+    height: 45px;
+    width: 65px;
+    border-radius: 50%;
+}
+.nav a{
+    color: black;
+}
+.navc {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.listc {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.listc a {
+    text-decoration: none;
+    color: black;
+}
+
+.navr {
+    width: 20%;
+
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+}
+
+.navr i {
+    font-size: 25px;
+}
+
+/* banner */
+.banner {
+    height: 80vh;
+    width: 100%;
+    background-image: url("../images/ChatGPT Image Nov 23, 2025, 12_42_00 PM.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 70px;
+}
+
+.bantxt {
+    color: white;
+    font-size: 40px;
+    font-family: cursive;
+    position: absolute;
+    top: 220px;
+    left: 70px;
+
+}
+
+.bantxt button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(238, 90, 36, 0.4);
+}
+@media (hover: hover) {
+    .bantxt button:hover{
+        transform: translateY(-3px) translateX(-50%);
+        box-shadow: 0 8px 25px rgba(238, 90, 36, 0.6);
+    }
+}
+button a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.herodn,
+p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.herodn p {
+    font-size: 20px;
+    color: rgb(88, 88, 88);
+}
+
+.herodn h1 {
+    color: rgb(58, 58, 58);
+}
+
+/* slidebar */
+.slide {
+    height: 400px;
+    width: 100%;
+    background-color: rgb(252, 252, 235);
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.cards {
+    height: 300px;
+    width: 23%;
+    position: relative;
+    border-radius: 10px;
+    
+}
+
+.cards img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    
+}
+
+.cards button {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #ff6600;
+    cursor: pointer;
+    
+}
+
+@media (hover: hover) {
+    .cards:hover {
+        transform: scale(1.02);
+    }
+    .cards button:hover{
+        background-color: whitesmoke;
+    }
+}
+/* styles */
+.styles {
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.styles h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.styles p {
+    font-size: 25px;
+}
+
+.stylecards {
+    height: 290px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.scards {
+    height: 200px;
+    width: 17%;
+}
+
+.scards img {
+    height: 140px;
+    width: 100%;
+
+}
+
+@media (hover: hover) {
+    .scards img:hover {
+        transform: scale(1.12);
+    }
+}
+
+/* down */
+.dntxt{
+    text-align: center;
+   margin: 10px 0;
+   padding: 20px 0;
+}
+.down{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 25px;
+    
+}
+.lft{
+    height:590px;
+    width: 40%;
+    background-color: black;
+}
+.lft img{
+    height:590px;
+    width: 100%;
+}
+.rgt{
+    height: 590px;
+    width: 60%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+   align-items: center;
+}
+.up{
+    height: 260px;
+    width: 90%;
+    background-color: white;
+}
+.up img{
+    height: 260px;
+    width: 100%;
+}
+.dn{
+    height: 300px;
+    width: 45%;
+    background-color: aquamarine;
+    
+}
+.dn img{
+    height:300px;
+    width: 100%;
+}
+
+.imgbtn {
+    position: relative;
+}
+
+.imgbtn img {
+    width: 100%;
+    display: block;
+}
+.shopbtn {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (hover: hover) {
+    .shopbtn:hover {
+        background: black;
+        color: white;
+    }
+}
+.imgtxt{
+    position: absolute;
+    top: 60%;      
+    left: 0;   
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    z-index: 10;
+    font-size: 50px;
+    opacity: 2;
+}
+.imgtxt1{
+    padding-top: 10px;
+    position: absolute;
+    top: 80%;      
+    left: 20px;   
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    z-index: 10;
+    font-size: 20px;
+    opacity: 2;
+}
+.imgtxt2 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    z-index: 10;
+    line-height: 1.3;
+    opacity: 20;
+}
+
+.imgtxt2 p {
+    margin: 0 0 5px 0;   
+}
+.imgtxt3 {
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    color:rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: bold;
+    z-index: 10;
+    line-height: 1.3;
+    opacity: 1;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+.imgtxt3 p {
+    margin: 0 0 5px 0;   
+}
+.imgtxt4 {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    color:black;
+    font-size: 25px;
+    font-weight: bold;
+    z-index: 10;
+    line-height: 1.3;
+    opacity: 1;
+    
+}
+
+.imgtxt4 p {
+    margin: 0 0 5px 0;   
+}
+/* footer */
+.footer{
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    gap: 20px;
+    padding: 40px 20px;
+}
+.f1{
+    height:220px;
+    width: 30%;
+    
+    
+}
+.f1 p{
+    text-align: start;
+    font-size: 19px;
+}
+.flist{
+    list-style-type: none;
+    margin-top: 10px;
+    padding-bottom: 50px;
+}
+.flist a{
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+}
+.flist li{
+    margin-bottom: 10px;
+}
+.f1 input{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 70px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.f1 button{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 122px;
+    border-radius: 10px;
+    background-color: rgb(17, 225, 17);
+    border: none;
+    outline: none;
+}
+.f1 img{
+    height: 30px;
+    width: 30px;
+    margin-top: 20px;
+    margin-right: 10px; 
+}
+@media (hover: hover) {
+    .f1 button:hover{
+        background-color: greenyellow;
+    }
+    .f1 img:hover{
+        background-color: rgb(190, 188, 188);
+    }
+}
+@media (hover: hover) {
+    .listc>li>a:hover{
+        background-color: rgb(216, 215, 215);
+        padding: 7px 10px;
+        border-radius: 10px;
+    }
+}
+.hamburgerdisplay {
+    display: none;
+    position: fixed;
+    top: 70px;       
+    left: 0;
+    width: 100%;     
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    text-align: center;
+    z-index: 1999;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+}
+.hamburgerdisplay ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.hamburgerdisplay li{
+    margin: 15px 0;
+}
+.hamburgerdisplay li a{
+    font-size: 18px;
+    padding: 12px 20px;
+    display: block;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+@media (hover: hover) {
+    .hamburgerdisplay li a:hover {
+        background-color: rgb(216, 215, 215);
+    }
+}
+.hamburgerdisplay a{
+    color: black;
+    text-decoration: none;
+    
+}
+.hamburgerdisplay{
+    display: none;
+}
+
+.hamburgerdisplay.show{
+    display: block;
+}
+
+/* Search Overlay */
+.search-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 3000;
+    backdrop-filter: blur(5px);
+}
+
+.search-overlay.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-container {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.search-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-header h2 {
+    margin: 0;
+    color: #333;
+}
+
+.close-search {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #666;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 15px 20px;
+    border: 2px solid #ddd;
+    border-radius: 50px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-box input:focus {
+    border-color: #ff6600;
+}
+
+.search-btn {
+    padding: 15px 25px;
+    background: #ff6600;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-suggestions h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.suggestion-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    padding: 8px 16px;
+    background: #f0f0f0;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+@media (hover: hover) {
+    .tag:hover {
+        background: #ff6600;
+        color: white;
+    }
+    .search-btn:hover {
+        background: #e55a00;
+    }
+    .close-search:hover {
+        color: #333;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-container {
+        padding: 20px;
+        margin: 20px;
+    }
+    .search-box {
+        flex-direction: column;
+    }
+    .search-btn {
+        align-self: stretch;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TABLET RESPONSIVE - iPad Pro, Surface Pro 7 */
+@media (max-width: 1366px) and (min-width: 1025px) {
+    /* NAVBAR */
+    .nav {
+        padding: 0 30px;
+        height: 75px;
+    }
+    .navl {
+        width: 25%;
+    }
+    .navl img {
+        height: 50px;
+        width: 70px;
+    }
+    .navl p {
+        font-size: 26px;
+    }
+    .navc {
+        width: 50%;
+    }
+    .listc {
+        font-size: 18px;
+        gap: 25px;
+    }
+    .navr {
+        width: 25%;
+    }
+    .navr i {
+        font-size: 26px;
+    }
+    .hamburger {
+        display: none;
+    }
+    
+    /* CONTENT */
+    .bantxt {
+        font-size: 36px;
+        top: 200px;
+        left: 60px;
+    }
+    .slide {
+        gap: 30px;
+        padding: 0 30px;
+    }
+    .cards {
+        width: 22%;
+    }
+    .stylecards {
+        gap: 25px;
+    }
+    .scards {
+        width: 16%;
+    }
+    .down {
+        padding-left: 30px;
+    }
+    
+    /* FOOTER */
+    .footer {
+        padding: 45px 30px;
+        gap: 25px;
+    }
+    .f1 {
+        width: 24%;
+        height: 240px;
+    }
+    .f1 h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .f1 p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .flist a {
+        font-size: 16px;
+    }
+    .f1 input {
+        width: 100%;
+        margin-left: 0;
+        padding: 12px 15px;
+        margin-top: 15px;
+    }
+    .f1 button {
+        width: 100%;
+        margin-left: 0;
+        padding: 12px 15px;
+        margin-top: 10px;
+    }
+    .f1 img {
+        height: 32px;
+        width: 32px;
+        margin-top: 15px;
+    }
+}
+
+/* TABLET RESPONSIVE - iPad Air, Standard Tablets */
+@media (max-width: 1024px) and (min-width: 769px) {
+    /* NAVBAR */
+    .nav {
+        padding: 0 15px;
+        height: 72px;
+    }
+    .hamburger {
+        display: block;
+        font-size: 26px;
+        color: black;
+        cursor: pointer;
+    }
+    .navc,
+    .navr {
+        display: none;
+    }
+    .navl {
+        width: 70%;
+    }
+    .navl img {
+        height: 42px;
+        width: 60px;
+    }
+    .navl p {
+        font-size: 20px;
+    }
+    
+    /* CONTENT */
+    .bantxt {
+        font-size: 32px;
+        top: 180px;
+        left: 50px;
+    }
+    .bantxt button {
+        left: 150px;
+        padding: 12px 25px;
+    }
+    .slide {
+        gap: 25px;
+        padding: 0 25px;
+    }
+    .cards {
+        width: 21%;
+        height: 280px;
+    }
+    .styles {
+        height: 380px;
+    }
+    .styles h1 {
+        font-size: 36px;
+    }
+    .styles p {
+        font-size: 22px;
+    }
+    .stylecards {
+        gap: 18px;
+    }
+    .scards {
+        width: 18%;
+        height: 180px;
+    }
+    .scards img {
+        height: 120px;
+    }
+    .down {
+        height: 550px;
+        padding-left: 25px;
+    }
+    .lft {
+        height: 540px;
+        width: 38%;
+    }
+    .lft img {
+        height: 540px;
+    }
+    .rgt {
+        height: 540px;
+        width: 62%;
+    }
+    .up {
+        height: 240px;
+        width: 88%;
+    }
+    .up img {
+        height: 240px;
+    }
+    .dn {
+        height: 280px;
+        width: 43%;
+    }
+    .dn img {
+        height: 280px;
+    }
+    .imgtxt {
+        font-size: 42px;
+    }
+    .imgtxt1 {
+        font-size: 18px;
+    }
+    .imgtxt2,
+    .imgtxt3,
+    .imgtxt4 {
+        font-size: 20px;
+    }
+    
+    /* FOOTER */
+    .footer {
+        padding: 40px 25px;
+        gap: 20px;
+    }
+    .f1 {
+        width: 24%;
+        height: 220px;
+    }
+    .f1 h2 {
+        font-size: 19px;
+        margin-bottom: 12px;
+    }
+    .f1 p {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+    .flist a {
+        font-size: 15px;
+    }
+    .f1 input {
+        width: 100%;
+        margin-left: 0;
+        padding: 10px 12px;
+        margin-top: 12px;
+    }
+    .f1 button {
+        width: 100%;
+        margin-left: 0;
+        padding: 10px 12px;
+        margin-top: 8px;
+    }
+    .f1 img {
+        height: 30px;
+        width: 30px;
+        margin-top: 12px;
+    }
+}
+
+/* SIMPLE RESPONSIVE PAGE */
+/* TABLET RESPONSIVE - Small Tablets */
+@media (max-width: 768px) and (min-width: 601px) {
+    /* NAVBAR */
+    .nav {
+        padding: 0 20px;
+    }
+    .hamburger {
+        display: block;
+        font-size: 26px;
+        color: black;
+        cursor: pointer;
+    }
+    .navc,
+    .navr {
+        display: none;
+    }
+    .navl {
+        width: 70%;
+    }
+    .navl img {
+        height: 42px;
+        width: 60px;
+    }
+    .navl p {
+        font-size: 22px;
+    }
+    
+    /* FOOTER */
+    .footer {
+        flex-direction: column;
+        padding: 35px 20px;
+        gap: 30px;
+    }
+    .f1 {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .f1 h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .f1 p {
+        font-size: 16px;
+    }
+    .flist {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .flist li {
+        margin-bottom: 5px;
+    }
+    .flist a {
+        font-size: 16px;
+    }
+    .f1 input,
+    .f1 button {
+        width: 80%;
+        margin: 10px auto;
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    .nav {
+        padding: 0 10px;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 28px;
+        color: black;
+        cursor: pointer;
+    }
+
+    .navc,
+    .navr {
+        display: none;
+    }
+
+    .navl img {
+        height: 35px;
+        width: 35px;
+    }
+
+    .navl p {
+        font-size: 20px;
+    }
+
+    /* BANNER */
+    .banner {
+        height: 50vh;
+        margin-top: 60px;
+    }
+    .bantxt {
+        font-size: 18px;
+        top: 100px;
+        left: 20px;
+        width: 90%;
+    }
+    .bantxt p {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    /* TRENDING CARDS */
+    .slide {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+    .cards {
+        width: 90%;
+        height: auto;
+    }
+
+    /* STYLES SECTION */
+    .stylecards {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .scards {
+        width: 40%;
+        height: auto;
+    }
+
+    /* DOWN SECTION */
+    .down {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        gap: 20px;
+    }
+    .lft,
+    .rgt {
+        width: 100%;
+        height: auto;
+    }
+
+    .up,
+    .dn {
+        width: 100%;
+        height: auto;
+    }
+
+    .up img,
+    .dn img,
+    .lft img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* TEXT ON IMAGES SMALLER */
+    .imgtxt,
+    .imgtxt1,
+    .imgtxt2,
+    .imgtxt3,
+    .imgtxt4 {
+        font-size: 18px;
+        left: 10px;
+        transform: none;
+    }
+
+    /* FOOTER */
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .f1 {
+        width: 100%;
+    }
+
+    .f1 input,
+    .f1 button {
+        width: 95%;
+        margin-left: 0;
+    }
+    .bantxt button{
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+        margin-top: 15px;
+    }
+    .styles{
+        height: auto;
+        padding-bottom: 40px;
+    }
+    
+    /* Additional mobile improvements */
+    .herodn h1 {
+        font-size: 28px;
+        padding: 0 20px;
+    }
+    
+    .herodn p {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+    
+    .dntxt h1 {
+        font-size: 28px;
+        padding: 0 20px;
+    }
+    
+    .dntxt h3 {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+    
+    .styles h1 {
+        font-size: 28px;
+        padding: 0 20px;
+    }
+    
+    .styles p {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+    
+    .navl {
+        width: 60%;
+    }
+    
+    .search-overlay {
+        padding: 10px;
+    }
+    
+    .navl p {
+        font-size: 16px;
+    }
+    
+    .f1 h2 {
+        font-size: 18px;
+    }
+    
+    .f1 p {
+        font-size: 16px;
+    }
+    
+    .flist a {
+        font-size: 16px;
+    }
+}
